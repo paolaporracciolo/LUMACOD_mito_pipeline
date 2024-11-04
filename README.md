@@ -1,4 +1,4 @@
-# LUMACOD_mito_pipeline
+# LUMACOD_mito_pipeline (1st part MT_AF in Joyo)
 
 This is the file to launch when launching the pipeline.
 The pipeline allows to calculate allelic frequencies of the mitochondrial genome
