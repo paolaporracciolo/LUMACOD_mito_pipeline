@@ -63,9 +63,11 @@ NB :
 For the moment you have to check in each script of this folder the section :
 
 ###################
+
 INPUT VARIABLES #
 
 INPUT VARIABLES #
+
 ###################
 
 To check the variables to change (then the user will be able to enter all of
