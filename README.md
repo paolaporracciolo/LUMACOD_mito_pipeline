@@ -12,6 +12,7 @@ The pipeline is composed of the following parts:
 
 conda activate heteroplasmy_pipeline
 ## FIRST PART : 
+
 1. Taking a folder containing bam/bai files as input.
    a. Checking if all data is indexed, if not, it indexes data.
    b. Filtering of BAMs to keep only chrM data.
@@ -33,6 +34,7 @@ conda activate heteroplasmy_pipeline
       each cell, of each celltype, of each donor, of each manip, of each compartment, in the form of:
       CELLTYPE_BARCODE_cellIDs_ADATANAME_DONOR_MANIP_COMPARTMENT.bam
       CELLTYPE_BARCODE_cellIDs_ADATANAME_DONOR_MANIP_COMPARTMENT.bai
+   
 3. Stats:
    a. Counting reads
    b. LOREM IPSUM
@@ -52,11 +54,13 @@ Now we have the cutoff x_coverage to filter positions.
 
 5. Filtering the matrix of allelic frequencies in 4.b., keeping positions where all celltypes
    have a coverage higher than the x_coverage cutoff. Saving these positions in robust_pos
+   
 6. Recalculating coverage and allelic frequencies:
    BAMs are now in the form of CELLTYPE_BARCODE_cellIDs_ADATANAME_DONOR_MANIP_COMPARTMENT.bam
    a. Calculating coverage for each position (cell by cell).
    b. Calculating allelic frequencies
    c. Calculate score_heteroplasmy from allelic sequencies
+   
 7. Keeping of this second allelic frequencies matrix only robust_pos.
 
 NB: my output h5ad should have for each manip for each celltype 100 or less cells
