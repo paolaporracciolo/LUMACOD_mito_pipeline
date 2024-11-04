@@ -64,9 +64,9 @@ For the moment you have to check in each script of this folder the section :
 
 ###################
 
-INPUT VARIABLES #
+INPUT VARIABLES 
 
-INPUT VARIABLES #
+INPUT VARIABLES
 
 ###################
 
